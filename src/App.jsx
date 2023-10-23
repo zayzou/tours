@@ -27,13 +27,7 @@ const App = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <section>
-          <div className="title">
-            <h2>Our Tours</h2>
-            <div className="title-underline"></div>
-          </div>
-          <Tours tours={tours} removeTour={removeTour} />
-        </section>
+        <Tours tours={tours} removeTour={removeTour} />
       )}
     </main>
   );
