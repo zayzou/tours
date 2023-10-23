@@ -22,9 +22,7 @@ const App = () => {
       });
   };
   useEffect(() => {
-    setTimeout(() => {
-      fetchTours();
-    }, 0);
+    fetchTours();
   }, []);
 
   if (isLoading) {
